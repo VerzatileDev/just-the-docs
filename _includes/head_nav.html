@@ -28,7 +28,7 @@
     {%- assign color_scheme = "light" -%}
   {%- endif %}
   @import "./color_schemes/light";
-  {% unless color_scheme == "light" or color_scheme == "auto" %}
+  {% unless color_scheme == "light"%}
   @import "./color_schemes/{{ color_scheme }}";
   {% endunless %}
   {{ activation }}
